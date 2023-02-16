@@ -18,6 +18,6 @@ jobs:
         with:
           key: ${{ github.ref }}
           path: .cache
-      - run: pip install mkdocs-material 
+      - run: pip install mkdocs-material
+      - run: pip install mkdocs-git-authors-plugin 
       - run: mkdocs gh-deploy --force
-      - run: pip install mkdocs-git-authors-plugin
