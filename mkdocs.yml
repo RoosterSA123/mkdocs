@@ -42,6 +42,8 @@ extra:
 plugins:
   - search
   - git-authors
+  - git-revision-date-localized:
+      type: date
 
 markdown_extensions:
   - pymdownx.tasklist:
