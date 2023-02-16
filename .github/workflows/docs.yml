@@ -20,3 +20,5 @@ jobs:
           path: .cache
       - run: pip install mkdocs-material 
       - run: mkdocs gh-deploy --force
+      - run: mkdocs-git-revision-date-localized-plugin
+      - run: mkdocs-git-authors-plugin
