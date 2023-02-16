@@ -52,9 +52,9 @@ markdown_extensions:
 nav:
   - Home: 
     - Welcome: index.md
-  - How To:
-    - Guides: how-to/how-to-guides.md
-  - Blog:
-    - Blog: blog/blog.md
+    - How To:
+      - how-to/how-to-guides.md
+    - Blog:
+      - blog/blog.md
 
 site_dir: public/
