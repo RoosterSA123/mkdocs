@@ -19,8 +19,8 @@ jobs:
       #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # https://squidfunk.github.io/mkdocs-material/publishing-your-site/?h=github#with-github-actions
-      - uses: actions/checkout@v2
-      - uses: actions/setup-python@v2
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
         with:
           python-version: 3.x
       - run: pip install mkdocs==1.3.0
@@ -28,4 +28,5 @@ jobs:
       - run: pip install mkdocs-material-extensions==1.0.3
       - run: pip install mkdocs-git-revision-date-localized-plugin
       - run: pip install mkdocs-git-authors-plugin
+      - run: mkdocs gh-deploy --force
 
