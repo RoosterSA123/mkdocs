@@ -5,8 +5,26 @@ theme:
   favicon: logo.png
   features:
     - navigation.tabs
+  icon:
+    repo: fontawesome/brands/github
+  palette: 
+
+    # Palette toggle for light mode
+  - scheme: default
+    toggle:
+      icon: material/brightness-7 
+      name: Switch to dark mode
+
+    # Palette toggle for dark mode
+  - scheme: slate
+    toggle:
+      icon: material/brightness-4
+      name: Switch to light mode
 extra_css:
   - extra.css
+
+repo_url: https://github.com/roostersa123/mkdocs
+
 
 extra:
   social:
@@ -23,6 +41,8 @@ extra:
 
 plugins:
   - search
+  - git-revision-date-localized:
+      type: date
 
 markdown_extensions:
   - pymdownx.tasklist:
@@ -34,9 +54,9 @@ markdown_extensions:
 nav:
   - Home: 
     - Welcome: index.md
-    - How To:
-      - how-to/how-to-guides.md
-    - Blog:
-      - blog/blog.md
+  - How To:
+    - Guides: how-to-guides.md
+  - Blog:
+    - Blog: blog/blog.md
 
 site_dir: public/
