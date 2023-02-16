@@ -56,7 +56,7 @@ nav:
   - Home: 
     - Welcome: index.md
   - How To:
-    - Guides: how-to-guides.md
+    - Guides: how-to/how-to-guides.md
   - Blog:
     - Blog: blog/blog.md
 
