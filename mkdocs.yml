@@ -41,7 +41,6 @@ extra:
 
 plugins:
   - search
-  - git-authors
 
 markdown_extensions:
   - pymdownx.tasklist:
